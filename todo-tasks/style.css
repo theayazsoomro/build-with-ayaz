@@ -1,0 +1,36 @@
+:root{
+    --body-bg-color: #f1f1f1;
+    --heading-color: #010101;
+    --task-bg-color: #ffffff;
+    --task-color: #010101;
+}
+.dark{
+    --body-bg-color: #042349e9;
+    --heading-color: #ffffff;
+    --task-bg-color: #191919;
+    --task-color: #fff;
+}
+
+body{
+    background-color: var(--body-bg-color);
+}
+h1{
+    color: var(--heading-color);
+}
+li{
+    text-decoration: none;
+    list-style: none;
+    background-color: var(--task-bg-color);
+    padding: 5px 20px;
+    color: var(--task-color);
+}
+.task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+.delete{
+    margin: 5px 0 5px 10px;
+}
