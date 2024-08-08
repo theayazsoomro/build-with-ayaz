@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg-color-dark: #03021d;
+  --bg-color-white: #f1f1f1;
+  --bg-color-grey: #9b9b9b;
+}
+body {
+  background: var(--bg-color-white);
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+h1 {
+  position: absolute;
+  top: 10px;
+  color: #f73c03;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-variant: small-caps;
+  word-spacing: 10px;
+  letter-spacing: 5px;
+  border-bottom: 3px solid #f73c0c;
+}
+/* 
+  Timer Section
+*/
+.timer {
+  width: auto;
+  margin: 10px auto;
+  padding: 20px;
+  background: var(--bg-color-white);
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px #817f7f;
+}
+/* 
+  Digits Section
+*/
+.digits {
+  display: inline-block;
+  width: 200px;
+  /* color: #f73c0c; */
+  font-size: 7rem;
+  text-align: center;
+  padding: 10px;
+  background: #ccc;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+/* 
+  Controls Section
+*/
+.btn {
+  padding: 10px 30px;
+  margin: 20px 10px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  box-shadow: 3px 3px 10px #817f7f;
+  outline: none;
+  color: #f1f1f1;
+  font-size: 1.5rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  cursor: pointer;
+}
+.start {
+  background: #039103;
+}
+.stop {
+  background: #ffae00;
+}
+.reset {
+  background: #ff0000;
+}
+/* 
+  Footer Section
+*/
+footer {
+  position: absolute;
+  bottom: 0;
+  font-size: 1rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* 
+  Break Point at Minimum Width 480px and Maximum Width 700px
+*/
+@media screen and (min-width: 480px) and (max-width: 700px) {
+  .digits {
+    width: 110px;
+    padding: 5px;
+    font-size: 5rem;
+  }
+}
+
+/* 
+  Break Point at and Minimum Width: 300px and Maximum Width 479px
+*/
+@media screen and (max-width: 479px) {
+  .digits {
+    width: 70px;
+    padding: 5px;
+    font-size: 3rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .btn {
+    padding: 5px 15px;
+    font-size: 1rem;
+  }
+}
+
+/* 
+  Break Point at and Minimum Width: 240px and Maximum Width 300px
+*/
+@media screen and (min-width: 240px) and (max-width: 300px) {
+  .digits {
+    width: 50px;
+    padding: 5px;
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 1rem;
+    border-bottom: 2px solid #f73c0c;
+  }
+  .btn {
+    margin: 10px 5px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+  }
+}
