@@ -25,6 +25,10 @@ Here's a list of some of the projects you'll find in this repository:
 1. **Project Name**: Weather App.
    - Technologies: HTML, CSS, and JavaScript.
    - [Go to Project](https://github.com/theayazsoomro/build-with-ayaz/tree/main/weather-app)
+  
+3. **Project Name**: Todo App.
+   - Technologies: HTML, CSS, and JavaScript.
+   - [Go to Project](https://github.com/theayazsoomro/build-with-ayaz/tree/main/todo-app)
 
 
 ## Installation
